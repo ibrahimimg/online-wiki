@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Wiki
+{% endblock %}
+
+{% block body %}
+
+    <h1>NEW WIKI</h1><br />
+    {% if message %}
+        <div id="message" style="color: red;">
+           {{ message }}
+        </div>
+        <br />
+    {% endif %}
+    <form action="{% url 'new' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <p></p>
+    <input type="submit" value="save">
+    </form>
+    
+{% endblock %}

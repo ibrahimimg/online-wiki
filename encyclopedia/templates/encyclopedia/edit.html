@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Wiki | {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    <h1>EDIT WIKI</h1><br />
+    {% if message %}
+        <div id="message" style="color: red;">
+           {{ message }}
+        </div>
+        <br />
+    {% endif %}
+    <form action="{% url 'edit' title %}" method="POST">
+        {% csrf_token %}
+        <p><label for="id_title">Title:</label> <input type="text" name="title" value="{{ title }}" id="id_title" readonly=""></p>
+        <p><label for="id_content">Content:</label> <textarea name="content" style="height: 300px" required id="id_content">{{ content }}</textarea></p>
+    <p>
+    <input type="submit" value="save">
+    </form>
+    
+{% endblock %}
