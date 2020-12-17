@@ -3,7 +3,8 @@ Design a Wikipedia-like online encyclopedia using Django
 
 ## Solution
 ### Demo
-[![demo](./images/wiki-demo.png)](https://youtu.be/yIVxduT2lF0)
+click this image to watch it on youtube
+[![demo](https://i.ytimg.com/vi/yIVxduT2lF0/maxresdefault.jpg)](https://www.youtube.com/watch?v=yIVxduT2lF0)
 
 ### Setup
 Make sure you have [Python3](https://https://www.python.org/) Installed on your system. \
@@ -14,8 +15,9 @@ and [Markdown2](https://pypi.org/project/markdown2/) library can be installed us
 
 ### Running
      python manage.py runserver
+
 ___
-## c50w Project1 Specification
+## cs50web Project1 Specification
 Complete the implementation of Wiki encyclopedia
 
 ### Entry Page: 
